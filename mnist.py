@@ -81,7 +81,7 @@ def main():
     # create instance of neural network
     n = neuralNetwork(input_nodes, hidden_nodes, output_nodes, learning_rate)
 
-    training_data_file = open("mnist_dataset/mnist_train.csv", "r")
+    training_data_file = open("mnist_dataset/mnist_train_100.csv", "r")
     training_data_list = training_data_file.readlines()
     training_data_file.close()
 
@@ -104,7 +104,7 @@ def main():
             n.train(inputs, targets)
 
     # load the mnist test data csv file into a list
-    test_data_file = open("mnist_dataset/mnist_test.csv", "r")
+    test_data_file = open("mnist_dataset/mnist_test_10.csv", "r")
     test_data_list = test_data_file.readlines()
     test_data_file.close()
 
