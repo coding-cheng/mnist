@@ -1,0 +1,1 @@
+Learning rate is : 0.3       Accuracy is : 0.9525
